@@ -4,28 +4,28 @@ import { ChevronDown, ChevronUp } from 'lucide-react';
 
 const faqs = [
   {
-    question: 'How does VivaQuest's AI interview system work?',
-    answer: 'VivaQuest uses advanced natural language processing and machine learning algorithms to simulate realistic interview scenarios. Our AI analyzes your responses, facial expressions, tone, and body language to provide comprehensive feedback on your performance.'
+    question: "How does VivaQuest's AI interview system work?",
+    answer: "VivaQuest uses advanced natural language processing and machine learning algorithms to simulate realistic interview scenarios. Our AI analyzes your responses, facial expressions, tone, and body language to provide comprehensive feedback on your performance."
   },
   {
-    question: 'Will I interact with real people during the mock interviews?',
-    answer: 'No, VivaQuest provides fully automated AI-powered interviews. This allows you to practice anytime without scheduling constraints, while still receiving professional-quality feedback and assessments.'
+    question: "Will I interact with real people during the mock interviews?",
+    answer: "No, VivaQuest provides fully automated AI-powered interviews. This allows you to practice anytime without scheduling constraints, while still receiving professional-quality feedback and assessments."
   },
   {
-    question: 'What types of interviews can I practice on VivaQuest?',
-    answer: 'VivaQuest offers a wide range of interview types including behavioral, technical, case study, and industry-specific interviews. You can select from various roles and difficulty levels to customize your practice experience.'
+    question: "What types of interviews can I practice on VivaQuest?",
+    answer: "VivaQuest offers a wide range of interview types including behavioral, technical, case study, and industry-specific interviews. You can select from various roles and difficulty levels to customize your practice experience."
   },
   {
-    question: 'How accurate is the AI feedback compared to human feedback?',
-    answer: 'Our AI feedback system has been trained on thousands of real interviews and validated by HR professionals and hiring managers. While no AI is perfect, our system provides feedback that closely aligns with professional human assessments in most cases.'
+    question: "How accurate is the AI feedback compared to human feedback?",
+    answer: "Our AI feedback system has been trained on thousands of real interviews and validated by HR professionals and hiring managers. While no AI is perfect, our system provides feedback that closely aligns with professional human assessments in most cases."
   },
   {
-    question: 'Can I access VivaQuest on my mobile device?',
-    answer: 'Yes, VivaQuest is fully responsive and works on desktop, tablet, and mobile devices. You'll need a device with a camera and microphone for the full interview experience.'
+    question: "Can I access VivaQuest on my mobile device?",
+    answer: "Yes, VivaQuest is fully responsive and works on desktop, tablet, and mobile devices. You'll need a device with a camera and microphone for the full interview experience."
   },
   {
-    question: 'Is my interview data private and secure?',
-    answer: 'Absolutely. We take privacy very seriously. Your interview recordings and data are encrypted and only accessible to you. We do not share your information with third parties without your explicit consent.'
+    question: "Is my interview data private and secure?",
+    answer: "Absolutely. We take privacy very seriously. Your interview recordings and data are encrypted and only accessible to you. We do not share your information with third parties without your explicit consent."
   }
 ];
 
