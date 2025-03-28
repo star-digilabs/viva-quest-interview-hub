@@ -1,6 +1,7 @@
 
 import React from 'react';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Play } from 'lucide-react';
+import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 
 const HeroSection = () => {
   return (
@@ -32,12 +33,40 @@ const HeroSection = () => {
             </a>
           </div>
           
-          <div className="relative">
-            <img 
-              src="/lovable-uploads/dbb56d40-9a2d-4f97-bf19-33f929358b3c.png" 
-              alt="VivaQuest Dashboard" 
-              className="w-full max-w-4xl mx-auto"
-            />
+          <div className="relative rounded-xl overflow-hidden shadow-2xl">
+            <Dialog>
+              <DialogTrigger asChild>
+                <div className="aspect-video max-w-4xl mx-auto relative cursor-pointer group">
+                  <img 
+                    src="/lovable-uploads/dbb56d40-9a2d-4f97-bf19-33f929358b3c.png" 
+                    alt="VivaQuest Dashboard" 
+                    className="w-full h-full object-cover transition-all duration-300 group-hover:brightness-75"
+                  />
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="h-20 w-20 rounded-full bg-white bg-opacity-20 backdrop-blur-md border border-white/30 flex items-center justify-center group-hover:scale-110 transition-all duration-300">
+                      <div className="h-16 w-16 rounded-full bg-blue-500 flex items-center justify-center">
+                        <Play className="h-8 w-8 text-white ml-1" />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="absolute bottom-4 left-4 md:bottom-8 md:left-8 px-4 py-2 bg-white/80 backdrop-blur-sm rounded-lg">
+                    <p className="font-medium text-gray-800">Watch how it works</p>
+                  </div>
+                </div>
+              </DialogTrigger>
+              <DialogContent className="sm:max-w-[800px] p-0 bg-black">
+                <div className="aspect-video w-full">
+                  <iframe 
+                    className="w-full h-full"
+                    src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1" 
+                    title="VivaQuest How It Works"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowFullScreen
+                  ></iframe>
+                </div>
+              </DialogContent>
+            </Dialog>
           </div>
         </div>
       </div>

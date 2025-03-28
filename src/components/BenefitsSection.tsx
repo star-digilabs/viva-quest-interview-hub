@@ -27,7 +27,7 @@ const BenefitsSection = () => {
   return (
     <section className="py-16 md:py-24 overflow-hidden relative bg-white">
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-20 right-10 w-72 h-72 bg-gradient-to-br from-viva-blue/10 to-transparent rounded-full animate-spin-slow"></div>
+        <div className="absolute top-20 right-10 w-72 h-72 bg-gradient-to-br from-blue-400/10 to-transparent rounded-full animate-spin-slow"></div>
         <div className="absolute bottom-40 left-10 w-48 h-48 bg-gradient-to-tr from-purple-400/10 to-transparent rounded-full animate-pulse" style={{ animationDuration: '7s' }}></div>
       </div>
       
@@ -48,7 +48,7 @@ const BenefitsSection = () => {
           </div>
           <div className="order-1 md:order-2 fade-in-section">
             <img 
-              src="/lovable-uploads/fec496fb-1e53-4770-bdb8-f20f1912ec18.png" 
+              src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" 
               alt="Comprehensive Interview Coverage" 
               className="w-full h-auto rounded-lg shadow-xl"
             />
@@ -59,7 +59,7 @@ const BenefitsSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-24 items-center">
           <div className="fade-in-section">
             <img 
-              src="/lovable-uploads/08693f18-9222-4114-825d-610d01819ebb.png" 
+              src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80" 
               alt="Instant Feedback" 
               className="w-full h-auto rounded-lg shadow-xl"
             />
@@ -86,7 +86,7 @@ const BenefitsSection = () => {
           </div>
           <div className="order-1 md:order-2 fade-in-section">
             <img 
-              src="/lovable-uploads/3e3af7f7-6eef-46af-8a5c-579bd4664ba5.png" 
+              src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" 
               alt="Flexible Practice" 
               className="w-full h-auto rounded-lg shadow-xl"
             />

@@ -87,6 +87,57 @@ const KeyFeaturesSection = () => {
               Evaluate your resume's effectiveness and match it against any job description to see how well it fits your target role.
             </p>
           </div>
+
+          {/* Feature 4 - NEW */}
+          <div className="bg-white/5 backdrop-blur-sm rounded-xl p-8 fade-in-section hover:transform hover:scale-105 transition-all duration-300">
+            <div className="bg-white/10 rounded-xl p-6 mb-6 mx-auto max-w-[280px]">
+              <img 
+                src="https://images.unsplash.com/photo-1512758017271-d7b84c2113f1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" 
+                alt="Performance Analytics" 
+                className="w-full h-auto rounded-lg"
+              />
+            </div>
+            <h3 className="text-2xl font-display font-semibold mb-4 text-center">
+              Performance Analytics
+            </h3>
+            <p className="text-gray-300 text-center">
+              Track your progress with detailed metrics and visualizations that highlight your improvement areas and strengths over time.
+            </p>
+          </div>
+          
+          {/* Feature 5 - NEW */}
+          <div className="bg-white/5 backdrop-blur-sm rounded-xl p-8 fade-in-section hover:transform hover:scale-105 transition-all duration-300">
+            <div className="bg-white/10 rounded-xl p-6 mb-6 mx-auto max-w-[280px]">
+              <img 
+                src="https://images.unsplash.com/photo-1573497620053-ea5300f94f21?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" 
+                alt="Expert Review" 
+                className="w-full h-auto rounded-lg"
+              />
+            </div>
+            <h3 className="text-2xl font-display font-semibold mb-4 text-center">
+              Expert Review Sessions
+            </h3>
+            <p className="text-gray-300 text-center">
+              Connect with industry professionals for personalized feedback and coaching to further refine your interview skills.
+            </p>
+          </div>
+          
+          {/* Feature 6 - NEW */}
+          <div className="bg-white/5 backdrop-blur-sm rounded-xl p-8 fade-in-section hover:transform hover:scale-105 transition-all duration-300">
+            <div className="bg-white/10 rounded-xl p-6 mb-6 mx-auto max-w-[280px]">
+              <img 
+                src="https://images.unsplash.com/photo-1541560052-77ec1bbc09f7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80" 
+                alt="AI Communication Coach" 
+                className="w-full h-auto rounded-lg"
+              />
+            </div>
+            <h3 className="text-2xl font-display font-semibold mb-4 text-center">
+              AI Communication Coach
+            </h3>
+            <p className="text-gray-300 text-center">
+              Receive real-time guidance on your communication style, body language, and delivery to help you present confidently.
+            </p>
+          </div>
         </div>
       </div>
     </section>

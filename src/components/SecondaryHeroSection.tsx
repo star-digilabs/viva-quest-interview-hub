@@ -23,9 +23,9 @@ const SecondaryHeroSection = () => {
           
           <div className="relative fade-in-section">
             <img 
-              src="/lovable-uploads/0014a827-c1e3-4cf9-90d1-7782c413ef35.png" 
-              alt="Practice with experts" 
-              className="w-full h-auto rounded-lg"
+              src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" 
+              alt="Interview preparation with experts" 
+              className="w-full h-auto rounded-lg shadow-lg"
             />
             <div className="absolute -top-5 -right-5 w-24 h-24 bg-blue-400 opacity-20 rounded-full blur-xl"></div>
             <div className="absolute -bottom-5 -left-5 w-32 h-32 bg-purple-500 opacity-20 rounded-full blur-xl"></div>
