@@ -1,6 +1,5 @@
-
 import React, { useEffect, useRef } from 'react';
-import { Video, MessageSquare, BarChart, Clock, Cpu, ShieldCheck } from 'lucide-react';
+import { Video, MessageSquare, BarChart, Clock, Cpu, ShieldCheck, Play } from 'lucide-react';
 
 const features = [
   {
@@ -54,7 +53,6 @@ const FeaturesSection = () => {
     const fadeElements = document.querySelectorAll('.fade-in-section');
     fadeElements.forEach((el) => observer.observe(el));
 
-    // Add mouse move effect for 3D card tilt
     featuresRef.current.forEach((card) => {
       if (!card) return;
       
@@ -82,7 +80,6 @@ const FeaturesSection = () => {
   return (
     <section id="features" className="bg-viva-gray py-16 md:py-24" ref={sectionRef}>
       <div className="section relative">
-        {/* Animated background elements */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <div className="absolute top-20 right-10 w-72 h-72 bg-gradient-to-br from-viva-blue/10 to-transparent rounded-full animate-spin-slow"></div>
           <div className="absolute bottom-40 left-10 w-48 h-48 bg-gradient-to-tr from-purple-400/10 to-transparent rounded-full animate-pulse" style={{ animationDuration: '7s' }}></div>
@@ -141,7 +138,6 @@ const FeaturesSection = () => {
           ))}
         </div>
 
-        {/* Video demonstration section */}
         <div className="mt-20 relative z-10">
           <div className="relative rounded-xl overflow-hidden shadow-xl">
             <div className="aspect-video w-full bg-gradient-to-r from-viva-blue/10 to-purple-500/10 flex items-center justify-center">
@@ -160,7 +156,6 @@ const FeaturesSection = () => {
             </div>
           </div>
           
-          {/* Floating elements */}
           <div className="absolute -top-10 -right-10 w-24 h-24 bg-purple-400 opacity-20 rounded-full blur-xl"></div>
           <div className="absolute -bottom-10 -left-10 w-32 h-32 bg-viva-blue opacity-10 rounded-full blur-xl"></div>
         </div>
