@@ -6,7 +6,7 @@ import FeaturesSection from '../components/FeaturesSection';
 import BenefitsSection from '../components/BenefitsSection';
 import KeyFeaturesSection from '../components/KeyFeaturesSection';
 import SecondaryHeroSection from '../components/SecondaryHeroSection';
-import HowItWorks from '../components/HowItWorks';
+import AboutSection from '../components/AboutSection';
 import TestimonialsSection from '../components/TestimonialsSection';
 import PricingSection from '../components/PricingSection';
 import FAQSection from '../components/FAQSection';
@@ -44,8 +44,7 @@ const Index = () => {
       <BenefitsSection />
       <KeyFeaturesSection />
       <FeaturesSection />
-      <SecondaryHeroSection />
-      <HowItWorks />
+      <AboutSection />
       <TestimonialsSection />
       <PricingSection />
       <FAQSection />
