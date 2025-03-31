@@ -41,10 +41,10 @@ const Index = () => {
     <div className="min-h-screen overflow-hidden">
       <Navbar />
       <HeroSection />
+      <AboutSection />
       <BenefitsSection />
       <KeyFeaturesSection />
       <FeaturesSection />
-      <AboutSection />
       <HowItWorksSection />
       <TestimonialsSection />
       <PricingSection />
