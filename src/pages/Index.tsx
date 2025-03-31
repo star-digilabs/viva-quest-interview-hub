@@ -5,8 +5,8 @@ import HeroSection from '../components/HeroSection';
 import FeaturesSection from '../components/FeaturesSection';
 import BenefitsSection from '../components/BenefitsSection';
 import KeyFeaturesSection from '../components/KeyFeaturesSection';
-import SecondaryHeroSection from '../components/SecondaryHeroSection';
 import AboutSection from '../components/AboutSection';
+import HowItWorksSection from '../components/HowItWorksSection';
 import TestimonialsSection from '../components/TestimonialsSection';
 import PricingSection from '../components/PricingSection';
 import FAQSection from '../components/FAQSection';
@@ -45,6 +45,7 @@ const Index = () => {
       <KeyFeaturesSection />
       <FeaturesSection />
       <AboutSection />
+      <HowItWorksSection />
       <TestimonialsSection />
       <PricingSection />
       <FAQSection />
