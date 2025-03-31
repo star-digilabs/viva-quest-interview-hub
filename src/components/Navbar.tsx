@@ -38,10 +38,11 @@ const Navbar = () => {
         <div className="flex justify-between items-center">
           <div className="flex items-center">
             <a href="#" className="flex items-center">
-              <span className="text-2xl font-bold">
-                <span className="text-black">Viva</span>
-                <span className="text-blue-500">Quest</span>
-              </span>
+              <img 
+                src="/lovable-uploads/logo-vivaquest.svg" 
+                alt="VivaQuest Logo" 
+                className="h-10 w-auto"
+              />
             </a>
           </div>
 
