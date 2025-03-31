@@ -1,5 +1,6 @@
+
 import React, { useEffect, useRef } from 'react';
-import { Video, MessageSquare, BarChart, Clock, Cpu, ShieldCheck, Play } from 'lucide-react';
+import { Video, MessageSquare, BarChart, Clock, Cpu, ShieldCheck } from 'lucide-react';
 
 const features = [
   {
@@ -136,28 +137,6 @@ const FeaturesSection = () => {
               )}
             </div>
           ))}
-        </div>
-
-        <div className="mt-20 relative z-10">
-          <div className="relative rounded-xl overflow-hidden shadow-xl">
-            <div className="aspect-video w-full bg-gradient-to-r from-viva-blue/10 to-purple-500/10 flex items-center justify-center">
-              <img 
-                src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&q=80&w=1200"
-                alt="VivaQuest Demo" 
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-black/20 flex items-center justify-center">
-                <button className="h-20 w-20 rounded-full bg-white bg-opacity-20 backdrop-blur-md border border-white/30 flex items-center justify-center group transition-transform duration-300 hover:scale-110">
-                  <div className="h-16 w-16 rounded-full bg-viva-blue flex items-center justify-center transform group-hover:scale-90 transition-transform">
-                    <Play className="h-8 w-8 text-white ml-1" />
-                  </div>
-                </button>
-              </div>
-            </div>
-          </div>
-          
-          <div className="absolute -top-10 -right-10 w-24 h-24 bg-purple-400 opacity-20 rounded-full blur-xl"></div>
-          <div className="absolute -bottom-10 -left-10 w-32 h-32 bg-viva-blue opacity-10 rounded-full blur-xl"></div>
         </div>
       </div>
     </section>
