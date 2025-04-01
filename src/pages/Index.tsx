@@ -11,6 +11,7 @@ import TestimonialsSection from '../components/TestimonialsSection';
 import PricingSection from '../components/PricingSection';
 import FAQSection from '../components/FAQSection';
 import Footer from '../components/Footer';
+import PricingComparisonSection from '../components/PricingComparisonSection';
 
 const Index = () => {
   useEffect(() => {
@@ -46,6 +47,7 @@ const Index = () => {
       <KeyFeaturesSection />
       <FeaturesSection />
       <HowItWorksSection />
+      <PricingComparisonSection />
       <TestimonialsSection />
       <PricingSection />
       <FAQSection />
