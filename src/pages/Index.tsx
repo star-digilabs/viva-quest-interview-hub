@@ -1,6 +1,7 @@
 
 import React, { useEffect } from 'react';
 import Navbar from '../components/Navbar';
+import HeroSection from '../components/HeroSection';
 import FeaturesSection from '../components/FeaturesSection';
 import BenefitsSection from '../components/BenefitsSection';
 import KeyFeaturesSection from '../components/KeyFeaturesSection';
@@ -40,6 +41,7 @@ const Index = () => {
   return (
     <div className="min-h-screen overflow-hidden">
       <Navbar />
+      <HeroSection />
       <AboutSection />
       <BenefitsSection />
       <KeyFeaturesSection />
