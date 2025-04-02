@@ -60,7 +60,10 @@ const CommunitySection = () => {
                   loop: true,
                 }}
                 className="w-full"
-                onSelect={(index) => setActiveIndex(index)}
+                onSelect={(api) => {
+                  const index = api.selectedScrollSnap();
+                  setActiveIndex(index);
+                }}
               >
                 <CarouselContent>
                   {communityUsers.map((user, index) => (
