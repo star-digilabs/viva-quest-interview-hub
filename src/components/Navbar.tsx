@@ -39,7 +39,7 @@ const Navbar = () => {
           <div className="flex items-center">
             <a href="#" className="flex items-center">
               <img 
-                src="/lovable-uploads/logo-vivaquest.svg" 
+                src="/lovable-uploads/6b417b0e-6611-49b2-b01c-0c2ade3e2da5.png" 
                 alt="VivaQuest Logo" 
                 className="h-10 w-auto"
               />
