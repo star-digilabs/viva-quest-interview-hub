@@ -6,7 +6,8 @@ import {
   CarouselContent,
   CarouselItem,
   CarouselNext,
-  CarouselPrevious
+  CarouselPrevious,
+  type CarouselApi
 } from "@/components/ui/carousel";
 
 const communityUsers = [
@@ -32,6 +33,23 @@ const communityUsers = [
 
 const CommunitySection = () => {
   const [activeIndex, setActiveIndex] = useState(0);
+  const [api, setApi] = useState<CarouselApi | null>(null);
+  
+  React.useEffect(() => {
+    if (!api) return;
+    
+    const onSelect = () => {
+      setActiveIndex(api.selectedScrollSnap());
+    };
+    
+    api.on("select", onSelect);
+    // Call once to set the initial index
+    onSelect();
+    
+    return () => {
+      api.off("select", onSelect);
+    };
+  }, [api]);
 
   return (
     <section className="bg-white py-16 md:py-24">
@@ -59,11 +77,8 @@ const CommunitySection = () => {
                   align: "start",
                   loop: true,
                 }}
+                setApi={setApi}
                 className="w-full"
-                onSelect={(api) => {
-                  const index = api.selectedScrollSnap();
-                  setActiveIndex(index);
-                }}
               >
                 <CarouselContent>
                   {communityUsers.map((user, index) => (
