@@ -68,6 +68,13 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				viva: {
+					purple: {
+						DEFAULT: '#610579',
+						light: '#bb0396',
+						dark: '#4c0460',
+						gradient: 'linear-gradient(135deg, #610579, #bb0396)'
+					},
+					bg: '#EDEAFF',
 					blue: '#007AFF',
 					'blue-light': '#E5F2FF',
 					'blue-dark': '#0055B3',

@@ -52,17 +52,17 @@ const CommunitySection = () => {
   }, [api]);
 
   return (
-    <section className="bg-white py-16 md:py-24">
+    <section className="bg-viva-bg py-16 md:py-24">
       <div className="section">
         <div className="text-center mb-16 fade-in-section">
-          <h2 className="text-4xl font-bold text-viva-gray-darker mb-12">
+          <h2 className="text-4xl font-bold gradient-text mb-12">
             Join Our Community of Happy Users
           </h2>
           
           <div className="flex flex-col md:flex-row items-center max-w-7xl mx-auto">
             {/* 100K+ Counter on the left side */}
             <div className="w-full md:w-1/3 mb-10 md:mb-0 text-center md:text-left">
-              <div className="text-6xl md:text-8xl font-bold text-[#7353BA]">
+              <div className="text-6xl md:text-8xl font-bold gradient-text">
                 100K+
               </div>
               <div className="text-lg text-viva-gray-dark font-normal mt-2">
@@ -83,8 +83,8 @@ const CommunitySection = () => {
                 <CarouselContent>
                   {communityUsers.map((user, index) => (
                     <CarouselItem key={index} className="md:basis-[calc(100%-40px)]">
-                      <div className="bg-white p-6 pt-8 pb-8 rounded-xl shadow-md relative">
-                        <div className="absolute -top-4 right-6 text-4xl bg-[#7353BA] text-white rounded-full p-2 w-10 h-10 flex items-center justify-center">
+                      <div className="glass-card p-6 pt-8 pb-8 relative">
+                        <div className="absolute -top-4 right-6 text-4xl gradient-bg rounded-full p-2 w-10 h-10 flex items-center justify-center">
                           {user.emoji}
                         </div>
                         <p className="text-viva-gray-dark mb-4 text-lg">{user.quote}</p>
@@ -105,7 +105,7 @@ const CommunitySection = () => {
                       <div 
                         key={i} 
                         className={`h-2 rounded-full ${
-                          i === activeIndex ? 'bg-[#7353BA] w-6' : 'bg-gray-300 w-2'
+                          i === activeIndex ? 'bg-gradient-to-r from-viva-purple to-viva-purple-light w-6' : 'bg-gray-300 w-2'
                         }`} 
                       />
                     ))}
