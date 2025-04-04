@@ -1,4 +1,3 @@
-
 import React, { useRef, useEffect } from 'react';
 
 const BenefitsSection = () => {
@@ -32,17 +31,17 @@ const BenefitsSection = () => {
       </div>
       
       <div className="section">
-        <h2 className="text-4xl md:text-5xl font-display font-bold text-center mb-16 text-blue-900">
+        <h2 className="text-4xl md:text-5xl font-display font-bold text-center mb-16 gradient-text">
           Benefits of using Mock Interview Platform
         </h2>
         
         {/* First Benefit */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-24 items-center">
           <div className="order-2 md:order-1 fade-in-section">
-            <h3 className="text-3xl font-display font-semibold mb-4 text-gray-900">
+            <h3 className="text-3xl font-display font-semibold mb-4 gradient-text">
               Comprehensive Interview Coverage
             </h3>
-            <p className="text-lg text-gray-600 mb-6">
+            <p className="text-lg text-viva-gray-dark mb-6">
               Whether you're preparing for technical, HR, coding, or problem-solving rounds, our platform offers a complete Mock Interview experience, all in one place.
             </p>
           </div>

@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect, useRef } from 'react';
 import { Plus } from 'lucide-react';
 
@@ -54,19 +53,19 @@ const FAQSection = () => {
   }, []);
 
   return (
-    <section id="faq" className="py-16 md:py-24 relative overflow-hidden bg-gray-50" ref={sectionRef}>
+    <section id="faq" className="py-16 md:py-24 relative overflow-hidden bg-white" ref={sectionRef}>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row gap-12">
           <div className="md:w-1/3">
-            <h2 className="text-4xl md:text-5xl font-display font-bold text-gray-900 mb-6">
+            <h2 className="text-4xl md:text-5xl font-display font-bold gradient-text mb-6">
               Frequently Asked Questions
             </h2>
-            <p className="text-gray-600 mb-8">
+            <p className="text-viva-gray-dark mb-8">
               Got a question? We're here to answer!
             </p>
             <a 
               href="#" 
-              className="inline-block text-blue-600 hover:text-blue-800 font-medium border-2 border-blue-600 hover:border-blue-800 rounded-full px-8 py-3 transition-colors"
+              className="inline-block text-viva-purple hover:text-viva-purple-light font-medium border-2 border-viva-purple hover:border-viva-purple-light rounded-full px-8 py-3 transition-colors"
             >
               View all FAQs
             </a>

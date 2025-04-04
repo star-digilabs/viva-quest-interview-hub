@@ -1,4 +1,3 @@
-
 import React, { useRef, useEffect } from 'react';
 
 const HowItWorksSection = () => {
@@ -31,11 +30,26 @@ const HowItWorksSection = () => {
     };
   }, []);
 
+  const steps = [
+    {
+      title: "Create Your Profile",
+      description: "Set up your profile with your industry, role preferences, and experience level to personalize your interview practice.",
+    },
+    {
+      title: "Choose Your Interview Type",
+      description: "Select from a variety of interview types including behavioral, technical, or role-specific scenarios.",
+    },
+    {
+      title: "Practice & Receive Feedback",
+      description: "Complete the interview and receive instant AI-generated feedback on your performance with actionable insights.",
+    },
+  ];
+
   return (
-    <section id="how-it-works" className="bg-white py-16 md:py-24" ref={sectionRef}>
+    <section id="how-it-works" className="bg-white py-16 md:py-24">
       <div className="section">
         <div className="text-center mb-16 fade-in-section">
-          <h2 className="text-4xl md:text-5xl font-bold text-viva-gray-darker mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold gradient-text mb-4">
             How VivaQuest Works
           </h2>
           <p className="text-lg md:text-xl text-viva-gray-dark max-w-3xl mx-auto">
@@ -50,7 +64,7 @@ const HowItWorksSection = () => {
           {/* Step 1 */}
           <div className="flex flex-col md:flex-row items-center mb-24 relative z-10 fade-in-section">
             <div className="md:w-1/2 md:text-right md:pr-12 mb-8 md:mb-0">
-              <h3 className="text-2xl md:text-3xl font-bold text-viva-gray-darker mb-3">
+              <h3 className="text-2xl md:text-3xl font-bold gradient-text mb-3">
                 Create Your Profile
               </h3>
               <p className="text-viva-gray-dark">
@@ -78,7 +92,7 @@ const HowItWorksSection = () => {
               </div>
             </div>
             <div className="md:w-1/2 md:pl-12 md:order-2">
-              <h3 className="text-2xl md:text-3xl font-bold text-viva-gray-darker mb-3">
+              <h3 className="text-2xl md:text-3xl font-bold gradient-text mb-3">
                 Choose Your Interview Type
               </h3>
               <p className="text-viva-gray-dark">
@@ -90,7 +104,7 @@ const HowItWorksSection = () => {
           {/* Step 3 */}
           <div className="flex flex-col md:flex-row items-center relative z-10 fade-in-section">
             <div className="md:w-1/2 md:text-right md:pr-12 mb-8 md:mb-0">
-              <h3 className="text-2xl md:text-3xl font-bold text-viva-gray-darker mb-3">
+              <h3 className="text-2xl md:text-3xl font-bold gradient-text mb-3">
                 Practice & Receive Feedback
               </h3>
               <p className="text-viva-gray-dark">
