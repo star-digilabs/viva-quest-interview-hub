@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <div className="md:col-span-1">
             <h2 className="text-xl font-display font-semibold mb-4">
-              Viva<span className="text-viva-blue">Quest</span>
+              Viva<span className="text-viva-purple-light">Quest</span>
             </h2>
             <p className="text-viva-gray-dark mb-4">
               The ultimate AI-powered mock interview platform to prepare you for success.
@@ -22,10 +22,10 @@ const Footer = () => {
               Product
             </h3>
             <ul className="space-y-2">
-              <li><a href="#features" className="text-viva-gray-dark hover:text-viva-blue transition-colors">Features</a></li>
-              <li><a href="#how-it-works" className="text-viva-gray-dark hover:text-viva-blue transition-colors">How It Works</a></li>
-              <li><a href="#pricing" className="text-viva-gray-dark hover:text-viva-blue transition-colors">Pricing</a></li>
-              <li><a href="#faq" className="text-viva-gray-dark hover:text-viva-blue transition-colors">FAQ</a></li>
+              <li><a href="#features" className="text-viva-gray-dark hover:text-viva-purple-light transition-colors">Features</a></li>
+              <li><a href="#how-it-works" className="text-viva-gray-dark hover:text-viva-purple-light transition-colors">How It Works</a></li>
+              <li><a href="#pricing" className="text-viva-gray-dark hover:text-viva-purple-light transition-colors">Pricing</a></li>
+              <li><a href="#faq" className="text-viva-gray-dark hover:text-viva-purple-light transition-colors">FAQ</a></li>
             </ul>
           </div>
           
@@ -34,10 +34,10 @@ const Footer = () => {
               Company
             </h3>
             <ul className="space-y-2">
-              <li><a href="#" className="text-viva-gray-dark hover:text-viva-blue transition-colors">About Us</a></li>
-              <li><a href="#" className="text-viva-gray-dark hover:text-viva-blue transition-colors">Careers</a></li>
-              <li><a href="#" className="text-viva-gray-dark hover:text-viva-blue transition-colors">Blog</a></li>
-              <li><a href="#" className="text-viva-gray-dark hover:text-viva-blue transition-colors">Press</a></li>
+              <li><a href="#" className="text-viva-gray-dark hover:text-viva-purple-light transition-colors">About Us</a></li>
+              <li><a href="#" className="text-viva-gray-dark hover:text-viva-purple-light transition-colors">Careers</a></li>
+              <li><a href="#" className="text-viva-gray-dark hover:text-viva-purple-light transition-colors">Blog</a></li>
+              <li><a href="#" className="text-viva-gray-dark hover:text-viva-purple-light transition-colors">Press</a></li>
             </ul>
           </div>
           
@@ -48,7 +48,7 @@ const Footer = () => {
             <ul className="space-y-2">
               <li className="text-viva-gray-dark">support@vivaquest.com</li>
               <li className="text-viva-gray-dark">1-800-VIVA-QUEST</li>
-              <li><a href="#" className="text-viva-gray-dark hover:text-viva-blue transition-colors">Contact Us</a></li>
+              <li><a href="#" className="text-viva-gray-dark hover:text-viva-purple-light transition-colors">Contact Us</a></li>
             </ul>
           </div>
         </div>
@@ -58,9 +58,9 @@ const Footer = () => {
             &copy; {currentYear} VivaQuest. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
-            <a href="#" className="text-viva-gray-dark hover:text-viva-blue transition-colors text-sm">Terms</a>
-            <a href="#" className="text-viva-gray-dark hover:text-viva-blue transition-colors text-sm">Privacy</a>
-            <a href="#" className="text-viva-gray-dark hover:text-viva-blue transition-colors text-sm">Cookies</a>
+            <a href="#" className="text-viva-gray-dark hover:text-viva-purple-light transition-colors text-sm">Terms</a>
+            <a href="#" className="text-viva-gray-dark hover:text-viva-purple-light transition-colors text-sm">Privacy</a>
+            <a href="#" className="text-viva-gray-dark hover:text-viva-purple-light transition-colors text-sm">Cookies</a>
           </div>
         </div>
       </div>

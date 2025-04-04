@@ -31,7 +31,7 @@ const Navbar = () => {
   return (
     <header 
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white shadow-sm py-3' : 'bg-transparent py-5'
+        isScrolled ? 'bg-white/80 backdrop-blur-md shadow-sm py-3' : 'bg-transparent py-5'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -49,14 +49,14 @@ const Navbar = () => {
           {/* Desktop navigation */}
           <nav className="hidden md:flex space-x-10">
             {navLinks.map((link) => (
-              <a key={link.name} href={link.href} className="text-gray-700 hover:text-blue-500 transition-colors duration-300">
+              <a key={link.name} href={link.href} className="nav-link">
                 {link.name}
               </a>
             ))}
           </nav>
 
           <div className="hidden md:flex items-center space-x-4">
-            <a href="#contact" className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-full transition-all">
+            <a href="#contact" className="button-primary">
               Get Started
             </a>
           </div>
@@ -65,7 +65,7 @@ const Navbar = () => {
           <div className="md:hidden flex items-center">
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="text-gray-700 p-2"
+              className="text-viva-gray-darker p-2"
               aria-expanded={mobileMenuOpen}
             >
               {mobileMenuOpen ? (
@@ -84,12 +84,12 @@ const Navbar = () => {
           mobileMenuOpen ? 'block animate-fade-in' : 'hidden'
         }`}
       >
-        <div className="bg-white px-2 pt-2 pb-3 space-y-1 sm:px-3">
+        <div className="bg-white/95 backdrop-blur-md px-2 pt-2 pb-3 space-y-1 sm:px-3 shadow-lg">
           {navLinks.map((link) => (
             <a
               key={link.name}
               href={link.href}
-              className="block px-3 py-2 text-gray-700 hover:text-blue-500"
+              className="block px-3 py-2 text-viva-gray-darker hover:text-viva-purple"
               onClick={() => setMobileMenuOpen(false)}
             >
               {link.name}
@@ -97,7 +97,7 @@ const Navbar = () => {
           ))}
           <a
             href="#contact"
-            className="block px-3 py-2 text-blue-500 font-medium"
+            className="block px-3 py-2 text-viva-purple font-medium"
             onClick={() => setMobileMenuOpen(false)}
           >
             Get Started
