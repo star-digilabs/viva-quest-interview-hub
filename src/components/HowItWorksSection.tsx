@@ -1,3 +1,4 @@
+
 import React, { useRef, useEffect } from 'react';
 
 const HowItWorksSection = () => {
@@ -59,7 +60,7 @@ const HowItWorksSection = () => {
 
         <div className="relative max-w-5xl mx-auto px-4">
           {/* Timeline line */}
-          <div className="absolute left-1/2 transform -translate-x-1/2 top-0 bottom-0 w-1 bg-viva-blue-light z-0"></div>
+          <div className="absolute left-1/2 transform -translate-x-1/2 top-0 bottom-0 w-1 bg-viva-purple-light/30 z-0"></div>
 
           {/* Step 1 */}
           <div className="flex flex-col md:flex-row items-center mb-24 relative z-10 fade-in-section">
@@ -72,8 +73,8 @@ const HowItWorksSection = () => {
               </p>
             </div>
             <div className="absolute left-1/2 transform -translate-x-1/2 flex items-center justify-center">
-              <div className="w-16 h-16 rounded-full bg-viva-blue flex items-center justify-center text-white font-bold text-xl z-20">
-                Step 1
+              <div className="w-16 h-16 rounded-full bg-gradient-to-r from-viva-purple to-viva-purple-light flex items-center justify-center text-white font-bold text-xl z-20 shadow-lg">
+                1
               </div>
             </div>
             <div className="md:w-1/2 md:pl-12">
@@ -87,8 +88,8 @@ const HowItWorksSection = () => {
               {/* Empty space for alignment on left side */}
             </div>
             <div className="absolute left-1/2 transform -translate-x-1/2 flex items-center justify-center">
-              <div className="w-16 h-16 rounded-full bg-viva-blue flex items-center justify-center text-white font-bold text-xl z-20">
-                Step 2
+              <div className="w-16 h-16 rounded-full bg-gradient-to-r from-viva-purple to-viva-purple-light flex items-center justify-center text-white font-bold text-xl z-20 shadow-lg">
+                2
               </div>
             </div>
             <div className="md:w-1/2 md:pl-12 md:order-2">
@@ -112,8 +113,8 @@ const HowItWorksSection = () => {
               </p>
             </div>
             <div className="absolute left-1/2 transform -translate-x-1/2 flex items-center justify-center">
-              <div className="w-16 h-16 rounded-full bg-viva-blue flex items-center justify-center text-white font-bold text-xl z-20">
-                Step 3
+              <div className="w-16 h-16 rounded-full bg-gradient-to-r from-viva-purple to-viva-purple-light flex items-center justify-center text-white font-bold text-xl z-20 shadow-lg">
+                3
               </div>
             </div>
             <div className="md:w-1/2 md:pl-12">
