@@ -42,8 +42,8 @@ const ComparisonSection = () => {
   ];
 
   return (
-    <section className="py-16 md:py-24 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="section bg-white">
+      <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12 fade-in-section">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
             How it Works
@@ -53,7 +53,7 @@ const ComparisonSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
           {/* Old Way */}
           <div className="fade-in-section border rounded-3xl shadow-lg p-8 relative">
             <div className="text-center mb-8">
@@ -127,7 +127,7 @@ const ComparisonSection = () => {
           </div>
         </div>
         
-        <div className="mt-16 text-center">
+        <div className="mt-12 text-center">
           <a href="#features" className="button-primary inline-block">
             See How VivaQuest Works
           </a>

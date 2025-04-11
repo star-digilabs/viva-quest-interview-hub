@@ -58,13 +58,13 @@ const KeyFeaturesSection = () => {
   ];
 
   return (
-    <section className="py-16 md:py-24 overflow-hidden relative bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-4xl md:text-5xl font-display font-bold text-center mb-20 gradient-text">
+    <section className="section bg-white">
+      <div className="max-w-7xl mx-auto">
+        <h2 className="text-4xl md:text-5xl font-display font-bold text-center mb-16 gradient-text">
           Key Features
         </h2>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
           {features.map((feature, index) => (
             <div
               key={index}
