@@ -12,7 +12,6 @@ import PricingSection from '../components/PricingSection';
 import FAQSection from '../components/FAQSection';
 import Footer from '../components/Footer';
 import PricingComparisonSection from '../components/PricingComparisonSection';
-import CommunitySection from '../components/CommunitySection';
 
 const Index = () => {
   useEffect(() => {
@@ -50,7 +49,6 @@ const Index = () => {
       <HowItWorksSection />
       <PricingComparisonSection />
       <TestimonialsSection />
-      <CommunitySection />
       <PricingSection />
       <FAQSection />
       <Footer />

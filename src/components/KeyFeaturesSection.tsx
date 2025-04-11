@@ -43,17 +43,17 @@ const KeyFeaturesSection = () => {
     {
       title: 'Performance Analytics',
       description: 'Track your progress with detailed metrics and visualizations that highlight your improvement areas and strengths over time.',
-      icon: 'https://images.unsplash.com/photo-1512758017271-d7b84c2113f1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
+      icon: '/lovable-uploads/267c1351-9495-485b-9006-cdb2edd572cc.png',
     },
     {
       title: 'Expert Review Sessions',
       description: 'Connect with industry professionals for personalized feedback and coaching to further refine your interview skills.',
-      icon: 'https://images.unsplash.com/photo-1573497620053-ea5300f94f21?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
+      icon: '/lovable-uploads/267c1351-9495-485b-9006-cdb2edd572cc.png',
     },
     {
       title: 'AI Communication Coach',
       description: 'Receive real-time guidance on your communication style, body language, and delivery to help you present confidently.',
-      icon: 'https://images.unsplash.com/photo-1541560052-77ec1bbc09f7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80',
+      icon: '/lovable-uploads/267c1351-9495-485b-9006-cdb2edd572cc.png',
     }
   ];
 
