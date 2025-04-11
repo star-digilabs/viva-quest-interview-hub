@@ -107,16 +107,16 @@ const TestimonialsSection = () => {
         <Star
           key={i}
           className={`h-5 w-5 ${
-            i < rating ? 'text-viva-blue fill-viva-blue' : 'text-viva-gray-dark'
+            i < rating ? 'text-viva-purple fill-viva-purple' : 'text-viva-gray-dark'
           }`}
         />
       ));
   };
 
   return (
-    <section className="bg-viva-blue-light py-16 md:py-24" ref={sectionRef}>
+    <section className="bg-viva-purple/10 py-12 md:py-16" ref={sectionRef}>
       <div className="section">
-        <div className="text-center mb-16 fade-in-section">
+        <div className="text-center mb-12 fade-in-section">
           <h2 className="section-title mx-auto">Success Stories from VivaQuest Users</h2>
           <p className="section-subtitle mx-auto">
             Read how VivaQuest has helped job seekers across industries ace their interviews.
@@ -141,7 +141,7 @@ const TestimonialsSection = () => {
                       "{testimonial.content}"
                     </blockquote>
                     <div className="flex items-center">
-                      <div className="rounded-full bg-viva-blue w-12 h-12 flex items-center justify-center text-white font-medium text-lg">
+                      <div className="rounded-full bg-viva-purple w-12 h-12 flex items-center justify-center text-white font-medium text-lg">
                         {testimonial.author.charAt(0)}
                       </div>
                       <div className="ml-4">
@@ -178,7 +178,7 @@ const TestimonialsSection = () => {
                   }}
                   className={`w-3 h-3 rounded-full transition-all duration-300 ${
                     i === activeIndex
-                      ? 'bg-viva-blue w-6'
+                      ? 'bg-viva-purple w-6'
                       : 'bg-viva-gray-dark bg-opacity-30'
                   }`}
                   aria-label={`Go to testimonial ${i + 1}`}

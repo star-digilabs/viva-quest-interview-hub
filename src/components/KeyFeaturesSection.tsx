@@ -58,7 +58,7 @@ const KeyFeaturesSection = () => {
   ];
 
   return (
-    <section className="section bg-white">
+    <section id="features" className="section bg-white">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-display font-bold text-center mb-16 gradient-text">
           Key Features

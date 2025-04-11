@@ -44,8 +44,8 @@ const ComparisonSection = () => {
   return (
     <section className="section bg-white">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-12 fade-in-section">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
+        <div className="text-center mb-8 fade-in-section">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
             How it Works
           </h2>
           <p className="text-lg text-viva-gray-dark max-w-3xl mx-auto">
@@ -53,38 +53,33 @@ const ComparisonSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
           {/* Old Way */}
-          <div className="fade-in-section border rounded-3xl shadow-lg p-8 relative">
-            <div className="text-center mb-8">
-              <h3 className="text-3xl font-bold text-gray-800">The Old Way</h3>
+          <div className="fade-in-section border rounded-3xl shadow-lg p-6 relative h-full">
+            <div className="text-center mb-6">
+              <h3 className="text-2xl font-bold text-gray-800">The Old Way</h3>
             </div>
             
-            <div className="relative">
+            <div className="relative flex flex-col items-center">
               {/* Central confused person */}
-              <div className="mx-auto w-40 h-40 flex items-center justify-center mb-6">
+              <div className="mx-auto w-32 h-32 flex items-center justify-center mb-4">
                 <div className="bg-purple-100 rounded-full p-4 w-full h-full flex items-center justify-center">
                   <img 
                     src="/lovable-uploads/07eb00d2-702a-4948-afb4-5e31c74e5cdf.png" 
                     alt="Confused person" 
-                    className="w-24 h-24 object-contain"
+                    className="w-20 h-20 object-contain"
                   />
                 </div>
               </div>
               
-              {/* Surrounding elements */}
-              <div className="flex flex-wrap justify-center gap-4">
+              {/* Surrounding elements in a more organized layout */}
+              <div className="grid grid-cols-2 gap-2 w-full max-w-md mx-auto">
                 {oldWaySteps.map((step, index) => (
                   <div 
                     key={index} 
-                    className="bg-gray-50 rounded-full px-4 py-2 flex items-center shadow-sm max-w-[200px]"
-                    style={{
-                      position: index < 4 ? 'relative' : 'relative',
-                      top: index % 2 === 0 ? '10px' : '-10px',
-                      left: index % 3 === 0 ? '-20px' : index % 3 === 1 ? '0px' : '20px',
-                    }}
+                    className="bg-gray-50 rounded-full px-3 py-2 flex items-center shadow-sm text-center justify-center"
                   >
-                    <span className="text-sm text-gray-700">{step.text}</span>
+                    <span className="text-xs md:text-sm text-gray-700">{step.text}</span>
                   </div>
                 ))}
               </div>
@@ -92,13 +87,13 @@ const ComparisonSection = () => {
           </div>
           
           {/* New Way */}
-          <div className="fade-in-section border border-viva-purple-light rounded-3xl shadow-lg p-8 relative">
-            <div className="text-center mb-8">
-              <h3 className="text-3xl font-bold gradient-text">The New Way</h3>
+          <div className="fade-in-section border border-viva-purple-light rounded-3xl shadow-lg p-6 relative h-full">
+            <div className="text-center mb-6">
+              <h3 className="text-2xl font-bold gradient-text">The New Way</h3>
             </div>
             
             <div className="flex flex-col items-center">
-              <div className="mb-8 rounded-xl overflow-hidden shadow-lg w-full max-w-lg">
+              <div className="mb-6 rounded-xl overflow-hidden shadow-lg w-full max-w-md mx-auto">
                 <img 
                   src="/lovable-uploads/9cadc9f2-71d4-4fa0-87d5-cefdafd45085.png" 
                   alt="AI Interview Platform" 
@@ -106,20 +101,16 @@ const ComparisonSection = () => {
                 />
               </div>
               
-              <div className="flex flex-wrap justify-center gap-4">
+              <div className="grid grid-cols-2 gap-3 w-full max-w-md mx-auto">
                 {newWaySteps.map((step, index) => (
                   <div 
                     key={index} 
-                    className="bg-purple-50 rounded-full px-4 py-2 flex items-center gap-2 shadow-sm"
-                    style={{
-                      position: 'relative',
-                      transform: `rotate(${index % 2 === 0 ? '-2deg' : '2deg'})`,
-                    }}
+                    className="bg-purple-50 rounded-full px-3 py-2 flex items-center gap-2 shadow-sm"
                   >
-                    <div className="w-8 h-8 rounded-full bg-gradient-to-r from-viva-purple to-viva-purple-light flex items-center justify-center text-white font-bold">
+                    <div className="w-6 h-6 rounded-full bg-gradient-to-r from-viva-purple to-viva-purple-light flex-shrink-0 flex items-center justify-center text-white font-bold text-xs">
                       {index + 1}
                     </div>
-                    <span className="text-sm text-viva-gray-dark">{step.text}</span>
+                    <span className="text-xs md:text-sm text-viva-gray-dark">{step.text}</span>
                   </div>
                 ))}
               </div>
@@ -127,7 +118,7 @@ const ComparisonSection = () => {
           </div>
         </div>
         
-        <div className="mt-12 text-center">
+        <div className="mt-8 text-center">
           <a href="#features" className="button-primary inline-block">
             See How VivaQuest Works
           </a>
