@@ -12,6 +12,7 @@ import PricingSection from '../components/PricingSection';
 import FAQSection from '../components/FAQSection';
 import Footer from '../components/Footer';
 import PricingComparisonSection from '../components/PricingComparisonSection';
+import ComparisonSection from '../components/ComparisonSection';
 
 const Index = () => {
   useEffect(() => {
@@ -44,6 +45,7 @@ const Index = () => {
       <HeroSection />
       <AboutSection />
       <BenefitsSection />
+      <ComparisonSection />
       <KeyFeaturesSection />
       <FeaturesSection />
       <HowItWorksSection />
