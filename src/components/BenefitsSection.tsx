@@ -77,9 +77,8 @@ const BenefitsSection = () => {
           {features.map((feature, index) => (
             <div 
               key={index}
-              className="fade-in-section"
+              className={`fade-in-section rounded-3xl shadow-lg overflow-hidden`}
               style={{ backgroundColor: feature.background }}
-              className={`fade-in-section rounded-3xl shadow-lg overflow-hidden ${index % 2 === 0 ? '' : ''}`}
             >
               <div className={`grid grid-cols-1 md:grid-cols-2 gap-8 ${index % 2 === 0 ? '' : 'md:flex-row-reverse'}`}>
                 <div className={`p-8 md:p-12 flex flex-col justify-center ${index % 2 === 1 ? 'md:order-2' : 'md:order-1'}`}>
