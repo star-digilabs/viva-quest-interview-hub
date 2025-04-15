@@ -13,6 +13,7 @@ import Footer from '../components/Footer';
 import PricingComparisonSection from '../components/PricingComparisonSection';
 import ComparisonSection from '../components/ComparisonSection';
 import CTASection from '../components/CTASection';
+import WhiteboardSection from '../components/WhiteboardSection';
 
 const Index = () => {
   useEffect(() => {
@@ -47,6 +48,7 @@ const Index = () => {
       <BenefitsSection />
       <ComparisonSection />
       <KeyFeaturesSection />
+      <WhiteboardSection />
       <HowItWorksSection />
       <PricingComparisonSection />
       <TestimonialsSection />
