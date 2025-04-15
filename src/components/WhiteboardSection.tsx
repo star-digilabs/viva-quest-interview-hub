@@ -1,12 +1,12 @@
 
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Button } from './ui/button';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const WhiteboardSection = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
   const slideRef = useRef<HTMLDivElement>(null);
-  const currentSlide = useRef(0);
+  const [currentSlide, setCurrentSlide] = useState(0);
   const totalSlides = 3; // Number of different features to showcase
 
   useEffect(() => {
@@ -67,38 +67,15 @@ const WhiteboardSection = () => {
   ];
 
   const nextSlide = () => {
-    if (currentSlide.current < totalSlides - 1) {
-      currentSlide.current += 1;
-      updateSlideContent();
-    }
+    setCurrentSlide((prev) => (prev < totalSlides - 1 ? prev + 1 : prev));
   };
 
   const prevSlide = () => {
-    if (currentSlide.current > 0) {
-      currentSlide.current -= 1;
-      updateSlideContent();
-    }
+    setCurrentSlide((prev) => (prev > 0 ? prev - 1 : prev));
   };
 
   const goToSlide = (index: number) => {
-    currentSlide.current = index;
-    updateSlideContent();
-  };
-
-  const updateSlideContent = () => {
-    if (slideRef.current) {
-      // First fade out
-      slideRef.current.classList.remove('animate-fade-in');
-      slideRef.current.classList.add('opacity-0');
-      
-      // Then update content and fade in
-      setTimeout(() => {
-        if (slideRef.current) {
-          slideRef.current.classList.remove('opacity-0');
-          slideRef.current.classList.add('animate-fade-in');
-        }
-      }, 300);
-    }
+    setCurrentSlide(index);
   };
 
   return (
@@ -116,19 +93,22 @@ const WhiteboardSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="fade-in-section animate-float">
             <img 
-              src="/lovable-uploads/74d5317a-a8e1-4bde-b0ee-c1e340435901.png" 
+              src="/lovable-uploads/f95e0572-d6b9-45d4-b407-348bc61b107b.png" 
               alt="Collaborative whiteboard interface" 
               className="w-full h-auto rounded-lg shadow-2xl"
             />
           </div>
           
-          <div className="fade-in-section" ref={slideRef}>
+          <div 
+            className="fade-in-section transition-opacity duration-300" 
+            ref={slideRef}
+          >
             <h3 className="text-3xl font-bold mb-6 text-viva-bg">
-              {features[currentSlide.current].title}
+              {features[currentSlide].title}
             </h3>
             
             <ul className="space-y-4">
-              {features[currentSlide.current].points.map((point, index) => (
+              {features[currentSlide].points.map((point, index) => (
                 <li key={index} className="flex items-start gap-3">
                   <span className="inline-block mt-1">•</span>
                   <span className="text-lg">{point}</span>
@@ -157,7 +137,7 @@ const WhiteboardSection = () => {
                     key={index}
                     onClick={() => goToSlide(index)}
                     className={`w-3 h-3 rounded-full transition-colors ${
-                      currentSlide.current === index ? 'bg-white' : 'bg-white/30 hover:bg-white/50'
+                      currentSlide === index ? 'bg-white' : 'bg-white/30 hover:bg-white/50'
                     }`}
                     aria-label={`Go to slide ${index + 1}`}
                   />
