@@ -14,6 +14,7 @@ import PricingComparisonSection from '../components/PricingComparisonSection';
 import ComparisonSection from '../components/ComparisonSection';
 import CTASection from '../components/CTASection';
 import WhiteboardSection from '../components/WhiteboardSection';
+import BusinessSolutionsSection from '../components/BusinessSolutionsSection';
 
 const Index = () => {
   useEffect(() => {
@@ -50,6 +51,7 @@ const Index = () => {
       <KeyFeaturesSection />
       <WhiteboardSection />
       <HowItWorksSection />
+      <BusinessSolutionsSection />
       <PricingComparisonSection />
       <TestimonialsSection />
       <PricingSection />
