@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect, useRef } from 'react';
 import { Plus } from 'lucide-react';
 
@@ -53,7 +54,7 @@ const FAQSection = () => {
   }, []);
 
   return (
-    <section id="faq" className="py-16 md:py-24 relative overflow-hidden bg-white" ref={sectionRef}>
+    <section id="faq" className="py-12 md:py-16 relative overflow-hidden bg-white" ref={sectionRef}>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row gap-12">
           <div className="md:w-1/3">
@@ -81,7 +82,7 @@ const FAQSection = () => {
                   >
                     <span className="text-xl font-medium text-gray-900">{faq.question}</span>
                     <span className={`ml-6 flex-shrink-0 transition-transform duration-300 ${openIndex === index ? 'rotate-45' : ''}`}>
-                      <Plus className="h-6 w-6 text-blue-600" />
+                      <Plus className="h-6 w-6 text-viva-purple" />
                     </span>
                   </button>
                   <div 

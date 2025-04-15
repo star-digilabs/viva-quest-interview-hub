@@ -60,7 +60,7 @@ const KeyFeaturesSection = () => {
   return (
     <section id="features" className="section bg-white">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-display font-bold text-center mb-16 gradient-text">
+        <h2 className="text-4xl md:text-5xl font-display font-bold text-center mb-10 gradient-text">
           Key Features
         </h2>
         

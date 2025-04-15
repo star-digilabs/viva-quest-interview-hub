@@ -12,6 +12,7 @@ import FAQSection from '../components/FAQSection';
 import Footer from '../components/Footer';
 import PricingComparisonSection from '../components/PricingComparisonSection';
 import ComparisonSection from '../components/ComparisonSection';
+import CTASection from '../components/CTASection';
 
 const Index = () => {
   useEffect(() => {
@@ -50,6 +51,7 @@ const Index = () => {
       <PricingComparisonSection />
       <TestimonialsSection />
       <PricingSection />
+      <CTASection />
       <FAQSection />
       <Footer />
     </div>
